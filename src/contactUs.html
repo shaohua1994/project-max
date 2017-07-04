@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/contactUs.css">
+	<style type="text/css"></style>
+</head>
+<body>
+       <!-- contact us -->
+       <div class="contact_us">
+       	<div class="contact-header">
+       	 <div class="wapper">
+       	 	<span>Home</span>><span>Contact Us</span>
+       	 </div>      		
+       	</div>
+       	<div class="content">
+       		<div class="content_left">
+       			<ul>
+       				<li><a href="javascript:;">Contact Us</a></li>
+       				<li><a href="javascript:;">Our Location</a></li>
+       				<li><a href="javascript:;">Overseas Offices</a></li>
+       			</ul>
+       		</div>
+       		<div class="content_right">
+       			<div class="right-Top">
+       				<h1>Contact Us</h1>
+       			</div>
+       			<div class="conRightMain">
+       				<div class="mainBox">
+       					<!-- 公司状况 -->
+       					<div class="headerOffice">
+       						<div class="headerImg">
+       							<img src="./img/contact_03.jpg">
+       						</div>
+       						<div class="headerAdd">
+       							<h3>Head office address</h3>
+       							<p>No.416 Jianye Road, South Jinqiao Area, Pudong, Shanghai, China</p>
+       							<p>Zip: 201201</p>
+       							<p>Tel: +86-21-58386256 +86-21-58386258</p>
+       							<p>Fax: +86-21-58383028</p>
+       							<p>E-mail: info@zenithcrusher.com</p>
+       						</div>
+       						<div class="clear"></div>
+       					</div>
+       					<!-- 调查表 -->
+       					<div class="quotationForm">
+       						<h2>Request a quotation</h2>
+       						<form action="" method="post" name="form" id="proForm" onsubmit="return checkForm();">
+       							<div class="divs"><label><font color="#FF0000">*</font> Your Name</label><input name="name" type="text" id="name" class="inputs"></div>
+							    <div class="divs"><label><font color="#FF0000">*</font> Your Email</label><input name="email" type="text" id="email" class="inputs"></div>
+							    <div class="divs"><label><font color="#FF0000">*</font> Country</label><input type="text" name="country" id="country" class="inputs"></div>
+							    <div class="divs"><label>Contact Tel </label><input name="phone" type="text" id="tel" class="inputs"></div>
+							    <div class="divs"><label>Other Contacts</label>
+								    <select name="imtype" type="text" id="imtype" class="imtype">
+								      <option value="skype" selected="selected">skype</option>
+								      <option value="viber">viber</option>
+								      <option value="whatsapp">whatsapp</option>
+								      <option value="wechat">wechat</option>
+								      <option value="line">line</option>
+								    </select>
+								    <input name="imvalue" type="text" id="imvalue" class="imvalue" value="Please enter your chat account" onfocus="if(value=='Please enter your chat account') {value=''; this.style.color='black'} " onblur="if(value=='') {value='Please enter your chat account'; this.style.color='#999999'}">
+							    </div>
+							    <div style="height:3px; clear:both;"></div>
+							    <div class="divs"><label><font color="#FF0000">*</font> Application </label>
+							            <p>
+							      <input type="checkbox" name="application[]" value="For Construction" id="construction">For Construction (like concrete, highway, railway, brick, building, etc)
+							            </p>
+							    </div>
+							     <div class="divs"><label class="nbsp">&nbsp;</label>
+							      <p>
+							      <input type="checkbox" name="application[]" value="For Mining" id="mining">For Mining ( like gold, copper, Iron ore beneficiation or nonmetal beneficiation, etc)
+							      </p>
+							    <div style="height:3px; clear:both;"></div>
+							    </div>
+							    <div class="divs"><label>Equipment</label>
+							        <p>
+							          <b><input type="checkbox" name="equipment[]" value="Crusher">      Crusher</b>
+							          <b><input type="checkbox" name="equipment[]" value="Ball Mill">      Ball Mill</b>
+							          <b><input type="checkbox" name="equipment[]" value="Other Mills">      Other mills</b>
+							          <b><input type="checkbox" name="equipment[]" value="Feeder">     Feeder</b>
+							          <b><input type="checkbox" name="equipment[]" value="Conveyor">     Conveyor</b>
+							          <b><input type="checkbox" name="equipment[]" value="Screen">     Screen</b>
+							          <b><input type="checkbox" name="equipment[]" value="Beneficiation">Beneficiation Equipments</b>
+							      </p>
+							    </div>
+							    <div style="height:3px; clear:both;"></div>
+							    <div class="divs">
+							    	<label><font color="#FF0000">*</font> Detailed Requirements:</label>
+							    	<textarea name="content" cols="45" rows="6" id="formMsg"></textarea>
+							    </div>
+							    <div class="divs">
+							    	<label class="nbsp">&nbsp;</label>
+							    	<input name="submit" type="submit" class="submit3" id="submit3" value=" Send Message " onclick="_gaq.push(['_trackEvent','Feedback','submit','www']);">
+							    </div>
+       						</form>
+       					</div>
+       					<!-- 地图 -->
+       					<div class="map">
+       						<img src="./img/mapbg.jpg" alt="" class="map-bg">
+							<div class="office-info russian" style="width:auto">
+								<div class="mapIco"></div>
+								<div class="info">
+									<img src="./img/russian.png" alt="Contact Person">
+									<p><span>Russian Office:</span> Tel:+7-9647615135</p>
+
+								</div>
+							</div>
+							<div class="office-info algeria" style="width:auto">
+								<div class="mapIco"></div>
+								<div class="info">
+									<img src="./img/algeria.png" alt="Contact Person">
+									<p><span>Russian Office:</span> Tel:+7-9647615135</p>
+									
+								</div>
+							</div>
+							<div class="office-info saudi-arabia" style="width:auto">
+								<div class="mapIco"></div>
+								<div class="info">
+									<img src="./img/saudi-arabia.png" alt="Contact Person">
+									<p><span>Russian Office:</span> Tel:+7-9647615135</p>
+									
+								</div>
+							</div>
+       					</div>
+       					<div class="agencyOffice">
+				            <h3 id="dubai">Dubai office address</h3>
+				            <p>Add: No.S-14, E07, China Cluster, International City, Dubai.</p>
+				      		<p>P.O.Box: 171810</p>
+				      		<p>Contact Person: Evan</p>
+							<p>Tel: +971-56-7156843  +971-4430 6964</p>
+				      		<p>WhatsApp: +971-56-7156843</p>
+				      		<p>E-mail: info@zenithcrusher.com evan@zenith.ae</p>
+				          </div>
+				          <div class="agencyOffice">
+				            <h3 id="dubai">Dubai office address</h3>
+				            <p>Add: No.S-14, E07, China Cluster, International City, Dubai.</p>
+				      		<p>P.O.Box: 171810</p>
+				      		<p>Contact Person: Evan</p>
+							<p>Tel: +971-56-7156843  +971-4430 6964</p>
+				      		<p>WhatsApp: +971-56-7156843</p>
+				      		<p>E-mail: info@zenithcrusher.com evan@zenith.ae</p>
+				          </div>
+				          <div class="agencyOffice">
+				            <h3 id="dubai">Dubai office address</h3>
+				            <p>Add: No.S-14, E07, China Cluster, International City, Dubai.</p>
+				      		<p>P.O.Box: 171810</p>
+				      		<p>Contact Person: Evan</p>
+							<p>Tel: +971-56-7156843  +971-4430 6964</p>
+				      		<p>WhatsApp: +971-56-7156843</p>
+				      		<p>E-mail: info@zenithcrusher.com evan@zenith.ae</p>
+				          </div>
+       				</div>
+       				<!-- 右 -->
+       				<div class="sideBar">
+	       				<div class="sideBarin">
+	       					<div class="servOnline">
+	       						<p>
+	       							SERVICE ONLINE
+	       							<span>></span>
+	       						</p>
+	       					</div>
+	       					<div class="sideSchBox">
+	       						<form action="" class="forms">
+	       							<input type="text" name="keyboard" id="keyboard" value="Search" onfocus="if(value=='Search') {value=''; this.style.color='black'} " onblur="if(value=='') {value='Search'; this.style.color='#999999'}">
+	       							<input type="submit" name="submit" value=" " class="schIco">
+	       						</form>
+	       					</div>
+	       					<div class="schbline"></div>
+	       					<div class="qrCode">
+	       						<img src="./img/QR-Code.png" alt="">
+	       					</div>
+	       				</div>
+	       			</div>
+       			</div>
+       		</div>
+       	</div>
+
+       
+       </div>
+</body>
+</html>
