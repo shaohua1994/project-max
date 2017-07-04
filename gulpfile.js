@@ -36,10 +36,17 @@ var less = require('gulp-less');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('less',function(){
-	gulp.src(['src/less/**/*.css','!src/less/_*.css','node_modules/bootstrap/dist/css/bootstrap.min.css'])
+	gulp.src(['src/less/**/*.less','!src/less/_*.less'])
+	.pipe(less())
 	.pipe(cssnano())
 	.pipe(gulp.dest('dist/css'))
 	.pipe(browserSync.reload({stream:true}))
+})
+
+gulp.task('css',function() {
+	gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css')
+	.pipe(cssnano())
+	.pipe(gulp.dest('dist/css'))
 })
 
 //js压缩、合并
@@ -56,7 +63,7 @@ gulp.task('js',function(){
 
 //监视所有的文件
 
-gulp.task('watch',['html','less','js','img'],function(){
+gulp.task('watch',['html','less','js','img','css'],function(){
 	gulp.watch('src/**/*.html',['html']);
 	gulp.watch('src/less/**/*.css',['less']);
 	gulp.watch('src/js/**/*.js',['js']);
@@ -65,7 +72,7 @@ gulp.task('watch',['html','less','js','img'],function(){
 //启动一个web服务，用于同步测试
 var browserSync = require('browser-sync');
 
-gulp.task('server',['html','less','js','img'],function(){
+gulp.task('server',['html','less','js','img','css'],function(){
 	browserSync.init({
 		server:{
 			baseDir:'./dist/'
