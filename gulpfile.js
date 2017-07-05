@@ -63,16 +63,17 @@ gulp.task('js',function(){
 
 //监视所有的文件
 
-gulp.task('watch',['html','less','js','img','css'],function(){
+gulp.task('watch',['html','less','js','img','css','data'],function(){
 	gulp.watch('src/**/*.html',['html']);
 	gulp.watch('src/less/**/*.less',['less']);
 	gulp.watch('src/js/**/*.js',['js']);
+	
 })
 
 //启动一个web服务，用于同步测试
 var browserSync = require('browser-sync');
 
-gulp.task('server',['html','less','js','img','css'],function(){
+gulp.task('server',['html','less','js','img','css','data'],function(){
 	browserSync.init({
 		server:{
 			baseDir:'./dist/'

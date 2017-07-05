@@ -1,9 +1,9 @@
 ;(function(){
   $('.mapIco').each(function(index,el){
-    $(el).mouseover(function(){
-      $(el).next().show();
+    $(this).mouseover(function(){
+      $(this).next().show();
     }).mouseout(function(){
-      $(el).next().hide();
+      $(this).next().hide();
     })
   })
 
