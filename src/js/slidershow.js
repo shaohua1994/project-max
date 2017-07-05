@@ -16,16 +16,16 @@ $(function(){
       });
 
        function insertInfo(array){
-    for (var i = 0; i < array.length; i++) {
-        var $msg = creat();
-        $('#dnew').append($msg);
-        //插入数据
-        var info = array[i];
-        $('#dnew li').eq(i).find('.dnew_title').html(info.title);
-        $('#dnew li').eq(i).find('.dnew_time').text(info.time);
+        for (var i = 0; i < array.length; i++) {
+            var $msg = creat();
+            $('#dnew').append($msg);
+            //插入数据
+            var info = array[i];
+            $('#dnew li').eq(i).find('.dnew_title').html(info.title);
+            $('#dnew li').eq(i).find('.dnew_time').text(info.time);
 
-    }
-  }
+        }
+      }
   function creat(){
       var str = "";
       str += '<li>';
