@@ -20,7 +20,7 @@ gulp.task('data',function(){
 	.pipe(gulp.dest('dist/'))
 	.pipe(browserSync.reload({stream:true}))
 })
-//imagemin 
+//imagemin
 
 gulp.task('img', function () {
     gulp.src('src/img/**/*.*')
